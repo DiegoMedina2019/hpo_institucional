@@ -31,6 +31,7 @@
                 </ul>
             </li> --}}
             <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+            <li><a class="nav-link scrollto" href="http://sistemahpo.hpotucuman.com.ar/login">Intranet</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
