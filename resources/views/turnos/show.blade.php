@@ -52,12 +52,16 @@
                   
                 </div>
                 <div class="portfolio-description isCliente">
-                  <h2>Alta de persona paciente</h2>
+                  <h5>Clinica: {{ $clinica->nombre }}  -  Direccion: {{ $clinica->direccion }}</h5>
+                  <hr>
+                  @if ($isEstudio == 0)
+                  <h5>Dr./Dra.: {{ $medico->nombre.", ".$medico->apellido }} </h5>
+                  @else
+                  <h5>Estudio: {{ $estudio->nombre }} </h5>
+                  @endif
+                  <h5>Paciente: {{ $paciente->nombre.", ".$paciente->apellido }} </h5>
+                  <h5>Fecha y hora: {{ date('d-m-Y H:i', strtotime( $agenda->fecha_hora ) ) }} </h5>
 
-                  <form action="{{route('turno.store')}}" method="post">
-                    @csrf
-                    
-                  </form>
                 </div>
             </div>
         </div>
