@@ -48,7 +48,7 @@
         <div class="container">
             <div class="col-lg-12">
                 <div class="portfolio-info">
-                  <h3>Espesifique los datos correspondientes</h3>
+                  <h3>Especifique los datos correspondientes</h3>
                   <p class="fst-italic text-danger">
                     Asegurate de completar los campos con el asterisco (*)
                   </p>

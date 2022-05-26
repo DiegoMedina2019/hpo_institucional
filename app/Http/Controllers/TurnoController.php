@@ -141,7 +141,6 @@ class TurnoController extends Controller
             return view('turnos.show',compact('turno','agenda','paciente','clinica','medico','isEstudio','estudio'));
 
         } catch (\Throwable $th) {
-            dd("sdfasdfsdfsdf");
             return back()->with("error","Disculpe, posiblemente el turno que solicito ya fue asignado a alguien mas, por favor eliga un fecha/horario distinto");
         }
 
