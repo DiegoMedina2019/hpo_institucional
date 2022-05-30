@@ -105,7 +105,7 @@
                 <li>
                   <i class='bx bx-check'></i>
                   <div>
-                    <h5>Haz clic en el siguiente <a href="{{route('turno')}}">enlace</a></h5>
+                    <h5>Haz clic en el siguiente <a href="{{route('turno')}}" style="text-decoration-line: underline;">enlace</a></h5>
                     <p>Te llevara al formulario para el inicio del proceso</p>
                   </div>
                 </li>
@@ -137,112 +137,182 @@
           </div>
   
           <div class="row">
-            
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href="">Campo Visual computarizado</a></h4>
-                <p></p>
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="swiper-wrapper">
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href="">Campo Visual computarizado</a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">                 
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href=""> VIDEOANGIOGRAFIA DIGITAL COMPUTARIZADA </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href=""> RECUENTO ENDOTELIAL </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href=""> EJERCICIOS ORTÓPTICOS </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href="">Ecografía</a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href="">Biometría</a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href="">Paquimetría</a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href="">Topografía</a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href=""> LASER ARGON </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href="">  Agudeza visual </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href="">OCT</a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href=""> RG </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href=""> RFG </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="col-12 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="icon-box box_services">
+                        <div class="icon"><i class='bx bx-pulse'></i></div>
+                        <h4><a href=""> YAG LASER </a></h4>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
               </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href=""> VIDEOANGIOGRAFIA DIGITAL COMPUTARIZADA </a></h4>
-                <p></p>
-              </div>
-            </div>          
-            
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href=""> RECUENTO ENDOTELIAL </a></h4>
-                <p></p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href=""> EJERCICIOS ORTÓPTICOS </a></h4>
-                <p></p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href="">Ecografía</a></h4>
-                <p></p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href="">Biometría</a></h4>
-                <p></p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href="">Paquimetría</a></h4>
-                <p></p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href="">Topografía</a></h4>
-                <p></p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href=""> LASER ARGON </a></h4>
-                <p></p>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href="">  Agudeza visual </a></h4>
-                <p></p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href="">OCT</a></h4>
-                <p></p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href=""> RG </a></h4>
-                <p></p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href=""> RFG </a></h4>
-                <p></p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box box_services">
-                <div class="icon"><i class='bx bx-pulse'></i></div>
-                <h4><a href=""> YAG LASER </a></h4>
-                <p></p>
-              </div>
+              <div class="swiper-pagination"></div>
+
             </div>
   
           </div>
@@ -254,85 +324,13 @@
     <section id="testimonials" class="testimonials">
         <div class="container" data-aos="zoom-in">
   
-          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="{{asset('plantilla/assets/img/testimonials/testimonials-1.jpg')}}" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="{{asset('plantilla/assets/img/testimonials/testimonials-2.jpg')}}" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="{{asset('plantilla/assets/img/testimonials/testimonials-3.jpg')}}" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="{{asset('plantilla/assets/img/testimonials/testimonials-4.jpg')}}" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-  
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="{{asset('plantilla/assets/img/testimonials/testimonials-5.jpg')}}" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-  
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-  
         </div>
     </section><!-- End Testimonials Section -->
   
   
       <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
-        <div class="container" data-aos="fade-up">
+        <div class="container"  data-aos="zoom-in">
   
           <div class="section-title">
             <h2>Equipo</h2>
@@ -340,210 +338,217 @@
           </div>
   
           <div class="row">
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me5.jpg')}}" class="img-fluid" alt="">
-                  <div class="social">
+
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="swiper-wrapper">
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me5.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dr. Prof. Daniel Fernando Dilascio</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Médico UNT</li>
+                            <li>Especialista en Oftalmología UBA (hospital de clínicas), Bs.As.</li>
+                            <li>Doctorado en medicina.</li>
+                            <li>Jefe de Servicio de Oftalmología Hospital Centro de Salud</li>
+                            <li>Profesor Titular USP-T</li>
+                            <li>Jefe de Trabajos Prácticos UNT</li>
+                            <li>Miembro fundador SAPO (Sociedad Argentina Plástica Ocular)</li>
+                            <li>Miembro CAO - SOT- SAO</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dr. Prof. Daniel Fernando Dilascio</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Médico UNT</li>
-                      <li>Especialista en Oftalmología UBA (hospital de clínicas), Bs.As.</li>
-                      <li>Doctorado en medicina.</li>
-                      <li>Jefe de Servicio de Oftalmología Hospital Centro de Salud</li>
-                      <li>Profesor Titular USP-T</li>
-                      <li>Jefe de Trabajos Prácticos UNT</li>
-                      <li>Miembro fundador SAPO (Sociedad Argentina Plástica Ocular)</li>
-                      <li>Miembro CAO - SOT- SAO</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me6.jpg')}}" class="img-fluid" alt="">
-                  <div class="social">
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+      
+                      <div class="member d-flex">
+                        <div class="member-img">
+                          <img src="{{asset('plantilla/assets/img/team/me6.jpg')}}"  class="img-fluid" alt="">
+                          <div class="social">
+                          </div>
+                        </div>
+                        <div class="member-info">
+                          <h4>Dr. Prof. Sergio Adrián Dilascio</h4>
+                          
+                          <span>
+                            <ul>
+                              <li>Médico UNT</li>
+                              <li>Especialista en Oftalmología FOA (Fundación Oftalmológica Argentina), Bs.As.</li>
+                              <li>Servicio de Oftalmología Hospital Centro de Salud</li>
+                              <li>Profesor Adjunto USP-T</li>
+                              <li>Jefe de trabajos prácticos UNT</li>
+                              <li>Miembro fundador Sociedad Argentina de Retina y Vítreo</li>
+                              <li>Miembro CAO – SOT – SAO</li>
+                            </ul>
+                          </span>
+                        </div>
+                      </div>                   
+                    
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dr. Prof. Sergio Adrián Dilascio</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Médico UNT</li>
-                      <li>Especialista en Oftalmología FOA (Fundación Oftalmológica Argentina), Bs.As.</li>
-                      <li>Servicio de Oftalmología Hospital Centro de Salud</li>
-                      <li>Profesor Adjunto USP-T</li>
-                      <li>Jefe de trabajos prácticos UNT</li>
-                      <li>Miembro fundador Sociedad Argentina de Retina y Vítreo</li>
-                      <li>Miembro CAO – SOT – SAO</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me7.jpg')}}" class="img-fluid" alt="">
-                  <div class="social">
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me7.jpg')}}"  class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dr. Prof. Elio Francisco Dilascio</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Profesor Plenario.</li>
+                            <li>Miembro del Consejo de Maestros</li>
+                            <li>Miembro de Número de la Academia de Ciencia de la Salud de la Facultad de Medicina UNT</li>                    
+                            <li>Miembro Fundador CAO (Consejo Argentino de oftalmología)</li>
+                            <li>Miembro Fundador SOT (Sociedad Oftalmológica Tucumán)</li>
+                            <li>Miembro SAO</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dr. Prof. Elio Francisco Dilascio</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Profesor Plenario.</li>
-                      <li>Miembro del Consejo de Maestros</li>
-                      <li>Miembro de Número de la Academia de Ciencia de la Salud de la Facultad de Medicina UNT</li>                    
-                      <li>Miembro Fundador CAO (Consejo Argentino de oftalmología)</li>
-                      <li>Miembro Fundador SOT (Sociedad Oftalmológica Tucumán)</li>
-                      <li>Miembro SAO</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me4.jpeg')}}" class="img-fluid" alt="">
-                  <div class="social">
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me1.jpeg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Prof. Graciela Graneros</h4>
+                        
+        
+                        <span>
+                          <ul>
+                            <li>Médico oftalmóloga certificada por Academia Nacional de medicina -Consejo argentino de oftalmología. Recertificado por CCREM.</li>
+                            <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán</li>
+                            <li>Docente Facultad de Medicina UNT</li>
+                            <li>Docente Facultad de Medicina USPT.</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dra. Prof. Silvia Carrizo Dilascio</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Médico oftalmóloga certificada por Academia Nacional de medicina -Consejo argentino de Oftalmología. Recertificado por CCREM.</li>
-                      <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán</li>
-                      <li>Docente Facultad de Medicina UNT</li>
-                      <li>Docente Facultad de Medicina USPT.</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me1.jpeg')}}" class="img-fluid" alt="">
-                  <div class="social">
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me2.jpeg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Patricia Susana Prieto.</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Médico Oftalmóloga Certificado por la Academia Nacional de Medicina. Certificada y Recertificada por UNT.</li>
+                            <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán.</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dra. Prof. Graciela Graneros</h4>
-                  
-  
-                  <span>
-                    <ul>
-                      <li>Médico oftalmóloga certificada por Academia Nacional de medicina -Consejo argentino de oftalmología. Recertificado por CCREM.</li>
-                      <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán</li>
-                      <li>Docente Facultad de Medicina UNT</li>
-                      <li>Docente Facultad de Medicina USPT.</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me2.jpeg')}}" class="img-fluid" alt="">
-                  <div class="social">
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me3.jpeg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Celia Raquel Valdez</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Medico oftalmóloga certificada por la Academia Nacional de Medicina y certificada recertificada por la UNT</li>
+                            <li>Presidente de la Caja de médicos e ingenieros de Tucumán.</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dra. Patricia Susana Prieto.</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Médico Oftalmóloga Certificado por la Academia Nacional de Medicina. Certificada y Recertificada por UNT.</li>
-                      <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán.</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me3.jpeg')}}" class="img-fluid" alt="">
-                  <div class="social">
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me4.jpeg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Marcela Auad</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Especialista en oftalmología recertificado 2005-2010-2015</li>
+                            <li>Master en oftalmología</li>
+                            <li>Master en oftalmología pediátrica</li>
+                            <li>Docente UNT</li>
+                            <li>Jede de trabajos prácticos facultad de medicina UNT</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dra. Celia Raquel Valdez</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Medico oftalmóloga certificada por la Academia Nacional de Medicina y certificada recertificada por la UNT</li>
-                      <li>Presidente de la Caja de médicos e ingenieros de Tucumán.</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me4.jpeg')}}" class="img-fluid" alt="">
-                  <div class="social">
+                </div><!-- End testimonial item -->
+      
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me8.jpg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Eulalia Inés Taritolay</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Oftalmología Laboral</li>
+                            <li>Jubilada como oftalmólogo de la Cátedra de Oftalmología de la U.N.T.</li>
+                            <li>Médico oftalmólogo del Hospital Carrillo de Yerba Buena</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dra. Marcela Auad</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Especialista en oftalmología recertificado 2005-2010-2015</li>
-                      <li>Master en oftalmología</li>
-                      <li>Master en oftalmología pediátrica</li>
-                      <li>Docente UNT</li>
-                      <li>Jede de trabajos prácticos facultad de medicina UNT</li>
-                    </ul>
-                  </span>
-                </div>
+                </div><!-- End testimonial item -->
+
               </div>
+              <div class="swiper-pagination"></div>
+
             </div>
-  
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="{{asset('plantilla/assets/img/team/me8.jpg')}}" class="img-fluid" alt="">
-                  <div class="social">
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Dra. Eulalia Inés Taritolay</h4>
-                  
-                  <span>
-                    <ul>
-                      <li>Oftalmología Laboral</li>
-                      <li>Jubilada como oftalmólogo de la Cátedra de Oftalmología de la U.N.T.</li>
-                      <li>Médico oftalmólogo del Hospital Carrillo de Yerba Buena</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
+
   
           </div>
   

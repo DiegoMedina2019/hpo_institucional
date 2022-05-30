@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('plantilla/assets/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('plantilla/assets/img/logo_2.png')}}" rel="icon">
   <link href="{{asset('plantilla/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -27,6 +27,8 @@
   <!-- Template Main CSS File -->
   <link href="{{asset('plantilla/assets/css/style.css')}}" rel="stylesheet">
 
+  <link href="{{asset('plantilla/assets/css/custom.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- =======================================================
   * Template Name: BizLand - v3.7.0
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -37,22 +39,6 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        {{-- <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i> --}}
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+54 03814226006</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section>
-
   <!-- ======= Header ======= -->
     @yield('header')
   <!-- End Header -->
@@ -62,7 +48,15 @@
   <!-- End Hero -->
 
   <main id="main">
-
+    <a href="https://www.facebook.com/hospitalprivadodeojos" class="btn-facebook" target="_blank">
+	    <i class="fab fa-facebook"></i>
+	  </a>
+    <a href="https://www.instagram.com/oftalmologia.hpo/" class="btn-intagram" target="_blank">
+	    <i class="fab fa-instagram"></i>
+	  </a>
+    <a href=" https://wa.me/03814226006?text=Hola%20me%20vengo%20desde%20la%20web" class="btn-wsp" target="_blank">
+	    <i class="fab fa-whatsapp"></i>
+	  </a>
     @yield('content')
 
     <div class="position-fixed bottom-0 start-center p-3" style="z-index: 11">
@@ -112,11 +106,8 @@
           <div class="col-lg-6 col-md-6 footer-links">
             <h4>Nuestras redes sociales</h4>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.facebook.com/hospitalprivadodeojos" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/oftalmologia.hpo/" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
           </div>
 

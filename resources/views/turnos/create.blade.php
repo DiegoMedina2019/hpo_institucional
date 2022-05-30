@@ -200,7 +200,7 @@
 
                         <div class="mb-3">
                           <label for="fecha_turno" class="form-label">Fecha de turno *</label>
-                          <input type="date" class="form-control" id="fecha_turno" name="fecha_turno">
+                          <input type="date" class="form-control" id="fecha_turno" name="fecha_turno" min="{{ date('Y-m-d',strtotime(date('Y-m-d').'+ 1 days')) }}" >
                           <span class="badge bg-danger">{{ $errors->first('fecha_turno') }}</span>
                         </div>
 
