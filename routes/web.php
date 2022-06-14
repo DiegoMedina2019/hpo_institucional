@@ -22,3 +22,4 @@ Route::get('new/paciente',[\App\Http\Controllers\TurnoController::class,'newPaci
 Route::get('create',[\App\Http\Controllers\TurnoController::class,'create'])->name('turno.create');
 Route::post('store',[\App\Http\Controllers\TurnoController::class,'store'])->name('turno.store');
 Route::get('get/horarios',[\App\Http\Controllers\HorarioController::class,'index'])->name('horarios');
+Route::get('get/dias',[\App\Http\Controllers\HorarioController::class,'dias'])->name('dias');

@@ -98,6 +98,51 @@ class HorarioController extends Controller
         }
     }
 
+    public function dias(Request $request)
+    {
+        $horarios = array();
+        $allHorarios = array();
+        $horarioAgenda = array();
+
+        if ($request->ajax()) {
+
+            $medico_id = $request->medico_id;
+            $tipoestudio_id = $request->tipoestudio_id;
+
+            if ($request->isEstudio == "true") {
+                $diasAtencion = Horario::where('tipoestudio_id',$tipoestudio_id )
+                                            ->select('dia')
+                                            ->get();
+                $titulo = "Los dias habiles para este estudio son los siguientes:";
+            } else {
+                $diasAtencion = Horario::where('medico_id',$medico_id )
+                                            ->select('dia')
+                                            ->get();
+                $titulo = "Los dias laborales del medico seleccionado son los siguientes:";
+            }
+            $arr = array();
+            foreach ($diasAtencion as  $value) {
+                array_push($arr,$value);
+            }
+
+            if (count( $arr) > 0) {
+                $result = $arr;//array_unique( $arr);
+                return response()->json([
+                    'mjs' => 'listado de dias recuperado',
+                    'status' => true,
+                    'diasAtencion' => $result,
+                    'titulo' =>  $titulo
+                ]);
+            } else {
+                return response()->json([
+                    'err' => 'Lo sentimos actualmente no podremos asignar este turno. Pero puedes comunicarte con nosotros para resolverlo enviandonos un <a href="https://wa.me/03813688983?text=Hola%20me%20necesito%20ayuda%20para%20generar%20un%20turno" target="_blank">Whatsapp</a>',
+                    'status' => false
+                ]);
+            }               
+               
+        }
+    }
+
     /**
      * Show the form for creating a new resource.
      *

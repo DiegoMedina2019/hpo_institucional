@@ -76,3 +76,8 @@
         line-height: 66px;
 	}
 }
+
+/* forms alta turno */
+.service_show{
+    display: none;
+}

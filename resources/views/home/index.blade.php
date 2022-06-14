@@ -578,7 +578,7 @@
               <div class="info-box  mb-4">
                 <i class="bx bx-phone-call"></i>
                 <h3>Llamanos</h3>
-                <p>+54 03814226006</p>
+                <p>+54 03813688983</p>
               </div>
             </div>
   

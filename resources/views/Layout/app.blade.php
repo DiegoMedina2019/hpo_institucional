@@ -54,23 +54,27 @@
     <a href="https://www.instagram.com/oftalmologia.hpo/" class="btn-intagram" target="_blank">
 	    <i class="fab fa-instagram"></i>
 	  </a>
-    <a href=" https://wa.me/03814226006?text=Hola%20me%20vengo%20desde%20la%20web" class="btn-wsp" target="_blank">
+    <a href=" https://wa.me/03813688983?text=Hola%20me%20vengo%20desde%20la%20web" class="btn-wsp" target="_blank">
 	    <i class="fab fa-whatsapp"></i>
 	  </a>
     @yield('content')
 
-    <div class="position-fixed bottom-0 start-center p-3" style="z-index: 11">
-      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header bg-primary text-white">
-          <i class='bx bx-error'></i>
-          <strong class="me-auto">¡Aviso!</strong>
-          {{-- <small>11 mins ago</small> --}}
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          Hello, world! This is a toast message.
+    <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
+
+      <div class=" toast-container position-fixed p-3 bottom-0 start-50 translate-middle-x" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-primary text-white">
+            <i class='bx bx-error'></i>
+            <strong class="me-auto">¡Aviso!</strong>
+            {{-- <small>11 mins ago</small> --}}
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
         </div>
       </div>
+
     </div>
 
   </main><!-- End #main -->
@@ -98,7 +102,7 @@
               Batalla de Ayacucho 276 <br>
               T4000 San Miguel de Tucumán<br>
               Tucumán <br><br>
-              <strong>Telefono:</strong> +54 03814226006<br>
+              <strong>Telefono:</strong> +54 03813688983<br>
               {{-- <strong>Email:</strong> info@example.com<br> --}}
             </p>
           </div>

@@ -121,7 +121,7 @@
                     </div>
 
                     @else
-                      <h4>{{$paciente->apellido.", ".$paciente->nombre}}</h4>
+                      <h4>Paciente: {{$paciente->apellido.", ".$paciente->nombre}}</h4>
                       <input type="hidden" name="paciente_id" value="{{$paciente->id}}">                      
 
                     @endif
@@ -131,7 +131,7 @@
                     <div class="mb-3 d-flex justify-content-center">
                       <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" id="isEstudio" name="isEstudio" >
-                        <label class="form-check-label" for="isEstudio">Si quiere un turno para un estudio active esta opcion</label>
+                        <h5 class="form-check-label" for="isEstudio">Si quiere un turno para un estudio active esta opcion</h5>
                       </div>
                     </div>
 
@@ -150,53 +150,98 @@
                           <span class="badge bg-danger">{{ $errors->first('clinica_id') }}</span>
                         </div>
 
-                        <div class="mb-3">
-                          <label class="form-label">Medico *</label>
-                          <select class="single form-control" name="medico_id" id="medico_id">
-                            <option disabled selected>Selecciona una opcion</option>
-                            @foreach ($medicos as $medico)
-                              <option value="{{ $medico->id }}">Dr./Dra. {{ $medico->apellido }}, {{ $medico->nombre }}</option>
-                            @endforeach
-                          </select>
-                          <span class="badge bg-danger">{{ $errors->first('medico_id') }}</span>
-                        </div>
-
-                        <div class="mb-3">
-                          <label class="form-label">Obra social, si corresponde</label>
-                          <select class=" single form-control" name="obrasocial" id="obrasocial">
-                            <option disabled selected>Selecciona una opción</option>
-                            <option value="Particular">Particular</option>
-                            @foreach ($obrassociales as $obrasocial)
-                              <option value="{{ $obrasocial->nombre }}">{{ $obrasocial->nombre }}</option>
-                            @endforeach
-                          </select>
-                        </div>
-
                       </div>
 
                       <div class="col-6">
 
-                        
                         <div class="mb-3">
-                          <label class="form-label">ART, si corresponde</label>
-                          <select class="single form-control" name="art" id="art">
+                          <label class="form-label">¿De las siguientes opciones cual posee?</label>
+                          <select class="single form-control" name="servicio" id="servicio">
                             <option disabled selected>Selecciona una opción</option>
-                            @foreach ($arts as $art)
-                              <option value="{{ $art->nombre }}">{{ $art->nombre }}</option>
-                            @endforeach
+                            <option value="1">PARTICULAR</option>
+                            <option value="2">OBRA SOCIAL</option>
+                            <option value="3">ART</option>
                           </select>
-                        </div>
+                        </div> 
 
-                        <div class="mb-3" style="display: none;" id="seccion_estudio">
-                          <label class="form-label">Estudio *</label>
-                          <select class="single form-control" name="tipoestudio_id" id="tipoestudio_id">
-                            <option disabled selected>Selecciona una opcion</option>
-                            @foreach ($tiposestudios as $estudio)
-                              <option value="{{ $estudio->id }}">{{ $estudio->nombre }}</option>
-                            @endforeach
-                          </select>
-                          <span class="badge bg-danger">{{ $errors->first('tipoestudio_id') }}</span>
+                      </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+                      <div class="mb-3 service_show" id="secc_art">
+                        <label class="form-label">ART, si corresponde</label>
+                        <select class="single form-control" name="art" id="art">
+                          <option disabled selected>Selecciona una opción</option>
+                          @foreach ($arts as $art)
+                            <option value="{{ $art->nombre }}">{{ $art->nombre }}</option>
+                          @endforeach
+                        </select>
+                      </div>
+  
+                      <div class="mb-3 service_show" id="secc_obra_social">
+                        <label class="form-label">Obra social, si corresponde</label>
+                        <select class=" single form-control" name="obrasocial" id="obrasocial">
+                          <option disabled selected>Selecciona una opción</option>
+                          <option value="Particular">Particular</option>
+                          @foreach ($obrassociales as $obrasocial)
+                            <option value="{{ $obrasocial->nombre }}">{{ $obrasocial->nombre }}</option>
+                          @endforeach
+                        </select>
+                      </div>
+  
+                      <div class="mb-3 service_show" id="secc_particular">
+                        <label class="form-label">Paciente</label>
+                        <input type="text" name="particular" id="" value="Particular" placeholder="Particular" disabled class="form-control">
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+
+                      <div class="mb-3">
+                        <label class="form-label">Medico *</label>
+                        <select class="single form-control" name="medico_id" id="medico_id">
+                          <option disabled selected>Selecciona una opcion</option>
+                          @foreach ($medicos as $medico)
+                            <option value="{{ $medico->id }}">Dr./Dra. {{ $medico->apellido }}, {{ $medico->nombre }}</option>
+                          @endforeach
+                        </select>
+                        <span class="badge bg-danger">{{ $errors->first('medico_id') }}</span>
+                      </div>
+
+                      <div class="mb-3" style="display: none;" id="seccion_estudio">
+                        <label class="form-label">Estudio *</label>
+                        <select class="single form-control" name="tipoestudio_id" id="tipoestudio_id">
+                          <option disabled selected>Selecciona una opcion</option>
+                          @foreach ($tiposestudios as $estudio)
+                            <option value="{{ $estudio->id }}">{{ $estudio->nombre }}</option>
+                          @endforeach
+                        </select>
+                        <span class="badge bg-danger">{{ $errors->first('tipoestudio_id') }}</span>
+                      </div>
+
+                      <div class="mb-3" style="display: none;" id="secc_dias">
+                        <i class='bx bxs-calendar-check'></i>
+                        <label class="form-label" id="titulo_list_dias">Los dias que atiende este medico son:</label>
+                        <div id="list_dias">
+                          <span class="badge bg-success">Lunes</span>
+                          <span class="badge bg-success">Martes</span>
+                          <span class="badge bg-success">Miercoles</span>
+                          <span class="badge bg-success">Lunes</span>
+                          <span class="badge bg-success">Martes</span>
+                          <span class="badge bg-success">Miercoles</span>
                         </div>
+                      </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+                      <div class="col-6">
 
                         <div class="mb-3">
                           <label for="fecha_turno" class="form-label">Fecha de turno *</label>
@@ -206,14 +251,20 @@
 
                       </div>
 
+                      <div class="col-6">
+
+                        <div class="mb-3">
+                          <label class="form-label">Horarios disponibles *</label>
+                          <select class="single form-control" name="hora_turno" id="hora_turno">
+                            <option disabled selected>Selecciona una opción</option>
+                          </select>
+                          <span class="badge bg-danger">{{ $errors->first('hora_turno') }}</span>
+                        </div>
+                      </div>
+                      
+
                     </div>
 
-                    <div class="mb-3">
-                      <label class="form-label">Horarios disponibles</label>
-                      <select class="single form-control" name="hora_turno" id="hora_turno">
-                        <option disabled selected>Selecciona una opción</option>
-                      </select>
-                    </div>
 
                     <button type="submit" class="btn btn-outline-primary">Solicitar turno</button>
                   </form>
@@ -247,6 +298,43 @@
     }
   };
 
+  const newTurno = (params) => {
+      $.ajax({
+          type: "GET",
+          url: "{{route('dias')}}",
+          data: params,
+          dataType: "json",
+          beforeSend: function(){ 
+          },
+          error: function(jqxhr, textStatus, error){
+              console.log(jqxhr);
+              
+          },
+          success: function(data){
+              if (data.status) {
+
+                  $('#titulo_list_dias').html('');
+                  $('#titulo_list_dias').html(data.titulo);
+                  $('#list_dias').html('');
+                  data.diasAtencion.forEach(dia => {
+                    $('#list_dias').append(
+                      '<span class="badge bg-success">'+dia.dia+'</span>'
+                      );
+                  });
+                    $('#secc_dias').show('slow')
+              }else{
+                  $('#titulo_list_dias').html('');
+                  $('#titulo_list_dias').html(data.titulo);
+                  $('#list_dias').html('');
+                  $('#list_dias').append(data.err );
+                  $('#secc_dias').show('slow')
+                  console.log(data);
+              }
+              
+          }
+      }); 
+  }
+
   $(document).ready(function () {       
 
 
@@ -254,6 +342,20 @@
 
       ($(this).is(':checked') ) ? $('#seccion_estudio').show('slow') : $('#seccion_estudio').hide('slow')
       $(this).val($(this).is(':checked')) //para poder enviar true cuando reciba el request del post en el controlador
+
+    })
+
+    $(document).on('change','#servicio',function (e) {
+
+      $('.service_show').hide();
+
+      ($(this).val() == 1)?
+        $("#secc_particular").show('slow'):
+        ($(this).val() == 2)?
+        $("#secc_obra_social").show('slow'):
+        ($(this).val() == 3)?
+        $("#secc_art").show('slow'):'';
+
 
     })
     $(document).on('change','#fecha_turno',function (e) {
@@ -299,6 +401,28 @@
         });       
 
         
+    })
+
+
+    $(document).on('change','#medico_id,#tipoestudio_id',function (e) {
+      
+      console.log( $('#tipoestudio_id').val());
+
+      let params = {
+        medico_id : $('#medico_id').val(),
+        tipoestudio_id : $('#tipoestudio_id').val(),
+        isEstudio : $('#isEstudio').is(':checked'),
+        _token : $('input[name=_token]').val(),
+      }
+      //console.log(params)
+      if ($('#isEstudio').is(':checked') && $('#tipoestudio_id').val() != null) {
+        console.log("es estudio");
+        newTurno(params);
+      }else if ( !$('#isEstudio').is(':checked') && $('#medico_id').val() != null) {
+        console.log("es medico");
+        newTurno(params);
+      }
+  
     })
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\TurnoEmail;
 use App\Models\Agenda;
 use App\Models\Art;
 use App\Models\Clinica;
@@ -11,7 +12,10 @@ use App\Models\ObraSocial;
 use App\Models\Paciente;
 use App\Models\Turno;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Log;
 
 class TurnoController extends Controller
 {
@@ -112,6 +116,7 @@ class TurnoController extends Controller
             }
         }
         $isEstudio = ($request->isEstudio)?1:0;
+        DB::beginTransaction();
         try {
 
             if($request->isNuevo == 1){
@@ -137,11 +142,26 @@ class TurnoController extends Controller
             $clinica = Clinica::find($turno->clinica_id);
             $medico = Medico::find($turno->medico_id);
             $estudio = TipoEstudio::find($turno->tipoestudio_id);
-    
+
+            if (! empty($paciente->email)) {
+                $data = array(
+                    "paciente" => $paciente,
+                    "turno" => $turno,
+                    "agenda" => $agenda,
+                    'clinica' => $clinica,
+                    'medico' => $medico,
+                    'isEstudio' => $isEstudio,
+                    'estudio' => $estudio
+                );
+                Mail::to($paciente->email)->queue(new TurnoEmail($data));
+            }
+            DB::commit();
             return view('turnos.show',compact('turno','agenda','paciente','clinica','medico','isEstudio','estudio'));
 
         } catch (\Throwable $th) {
-            return back()->with("error","Disculpe, posiblemente el turno que solicito ya fue asignado a alguien mas, por favor eliga un fecha/horario distinto");
+            DB::rollback();
+            Log::error('**ALTA DE TURNO**: ' . $th->getMessage());
+            return back()->with("error","Disculpe, posiblemente el turno que solicito ya fue asignado a alguien mas, por favor eliga una fecha/horario distinto");
         }
 
 

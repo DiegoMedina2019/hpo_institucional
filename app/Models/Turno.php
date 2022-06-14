@@ -13,7 +13,7 @@ class Turno extends Model
     {
         $this->prioridad = "Normal";
         $this->fecha = date('Y-m-d');
-        $this->obrasocial = $request->obrasocial;
+        $this->obrasocial = ($request->servicio == "1" ) ? "Particular" :$request->obrasocial;
         $this->art = $request->art;
         $this->paciente_id = $paciente_id;
         $this->medico_id = $request->medico_id;
