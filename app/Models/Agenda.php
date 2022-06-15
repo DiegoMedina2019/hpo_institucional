@@ -9,7 +9,7 @@ class Agenda extends Model
 {
     use HasFactory;
 
-    public function create($request, $paciente)
+    public function create($request, $paciente,$turno_id)
     {
         $this->fecha_hora = date('Y-m-d H:i:s',strtotime($request->fecha_turno." ".$request->hora_turno) );
         $this->nombre_paciente = $paciente->nombre.", ".$paciente->apellido;
@@ -26,6 +26,7 @@ class Agenda extends Model
 
         $this->id_user_created = 1;
         $this->id_user_update = 1;
+        $this->turno_id = $turno_id;
 
         $this->save();
     }

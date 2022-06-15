@@ -137,7 +137,7 @@ class TurnoController extends Controller
             $turno->create($request,$paciente->id);
     
             $agenda = new Agenda();
-            $agenda->create($request,$paciente);
+            $agenda->create($request,$paciente,$turno->id);
 
             $clinica = Clinica::find($turno->clinica_id);
             $medico = Medico::find($turno->medico_id);

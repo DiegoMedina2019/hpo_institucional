@@ -50,7 +50,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['single','crom_job'],
             'ignore_exceptions' => false,
         ],
 
@@ -112,6 +112,11 @@ return [
 
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
+        ],
+
+        'crom_job' => [
+            'driver' => 'syslog',
+            'path' => storage_path('logs/crom_job.log')
         ],
     ],
 
