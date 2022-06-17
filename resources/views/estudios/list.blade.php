@@ -115,19 +115,24 @@
     }
 
     $(document).on('click','.ajax', function(e){
+        //para salir de paso rapido en pruebas o prod
+        let endpoint = (true)?"http://sistemahpo.hpotucuman.com.ar": "http://127.0.0.1:8001";
         $('#preloader2').show();
         let body = {
             file_id:$(this).prop('id')
         }
         $.ajax({
             type: "GET",
-            url: "http://sistemahpo.hpotucuman.com.ar/api/get_file",
+            url: endpoint+"/api/get_file",
             data: body,
             dataType: "json",
             beforeSend: function(){ 
             },
             error: function(jqxhr, textStatus, error){
-                console.log(jqxhr);
+                console.log(jqxhr.responseJSON.mjs);
+                $('.toast-body').html('');
+                $('.toast-body').html(jqxhr.responseJSON.mjs);
+                toast.show()
                 $('#preloader2').hide();
             },
             success: function(data){
