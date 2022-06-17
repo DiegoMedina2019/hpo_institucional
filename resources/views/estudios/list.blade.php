@@ -121,7 +121,7 @@
         }
         $.ajax({
             type: "GET",
-            url: "http://127.0.0.1:8001/api/get_file",
+            url: "http://sistemahpo.hpotucuman.com.ar/api/get_file",
             data: body,
             dataType: "json",
             beforeSend: function(){ 
