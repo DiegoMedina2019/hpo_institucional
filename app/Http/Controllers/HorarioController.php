@@ -135,7 +135,7 @@ class HorarioController extends Controller
                 ]);
             } else {
                 return response()->json([
-                    'err' => 'Lo sentimos actualmente no podremos asignar este turno. Pero puedes comunicarte con nosotros para resolverlo enviandonos un <a href="https://wa.me/03813688983?text=Hola%20me%20necesito%20ayuda%20para%20generar%20un%20turno" target="_blank">Whatsapp</a>',
+                    'err' => 'Lo sentimos actualmente no podremos asignar este turno. Pero puedes comunicarte con nosotros para resolverlo enviandonos un <a href="https://wa.me/03813688983?text=Hola%20necesito%20ayuda%20para%20generar%20un%20turno" target="_blank">Whatsapp</a>',
                     'status' => false
                 ]);
             }               

@@ -16,8 +16,9 @@
                 </div>
                 <div class="portfolio-description isCliente">
                   <h4>Clinica: {{ $info['clinica'] }}  -  Direccion: {{ $info['direccion'] }}</h4>
-                  <h5>Fecha y hora: {{ date('d-m-Y H:i', strtotime( $info['horario'] ) ) }} </h5>
-
+                  <h4>Fecha y hora: {{ date('d-m-Y H:i', strtotime( $info['horario'] ) ) }} </h4>
+                    <P>Por favor en caso de no poder asistir comunicarse con nosotros por medio de <a href="https://wa.me/03813688983?text=Hola%20necesito%20ayuda%20para%20cancelar%20mi%20turno" target="_blank">Whatsapp</a>
+                    </P>
                 </div>
             </div>
         </div>

@@ -29,8 +29,6 @@
 
   <link href="{{asset('plantilla/assets/css/custom.css')}}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
   <!-- =======================================================
   * Template Name: BizLand - v3.7.0
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -41,7 +39,6 @@
 
 <body>
 
-
   <!-- ======= Header ======= -->
     @yield('header')
   <!-- End Header -->
@@ -51,15 +48,7 @@
   <!-- End Hero -->
 
   <main id="main">
-    <a href="https://www.facebook.com/hospitalprivadodeojos" class="btn-facebook" target="_blank">
-	    <i class="fab fa-facebook"></i>
-	  </a>
-    <a href="https://www.instagram.com/oftalmologia.hpo/" class="btn-intagram" target="_blank">
-	    <i class="fab fa-instagram"></i>
-	  </a>
-    <a href=" https://wa.me/03813688983?text=Hola%20vengo%20desde%20la%20web" class="btn-wsp" target="_blank">
-	    <i class="fab fa-whatsapp"></i>
-	  </a>
+
     @yield('content')
 
     <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
@@ -95,32 +84,15 @@
       </div>
     </div>
 
-    <div class="footer-top">
+    {{-- <div class="footer-top">
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-6 col-md-6 footer-contact">
-            <h3>HPO<span>.</span></h3>
-            <p>
-              Batalla de Ayacucho 276 <br>
-              T4000 San Miguel de Tucumán<br>
-              Tucumán <br><br>
-              <strong>Telefono:</strong> +54 03813688983<br>
-              {{-- <strong>Email:</strong> info@example.com<br> --}}
-            </p>
-          </div>
 
-          <div class="col-lg-6 col-md-6 footer-links">
-            <h4>Nuestras redes sociales</h4>
-            <div class="social-links mt-3">
-              <a href="https://www.facebook.com/hospitalprivadodeojos" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/oftalmologia.hpo/" class="instagram"><i class="bx bxl-instagram"></i></a>
-            </div>
-          </div>
 
         </div>
       </div>
-    </div>
+    </div> --}}
 
     <div class="container py-4">
       <div class="copyright">
@@ -138,7 +110,6 @@
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <div id="preloader2" style="display: none;"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -154,9 +125,6 @@
   <!-- Template Main JS File -->
   <script src="{{asset('plantilla/assets/js/main.js')}}"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
   <script>
         var toastLiveExample = document.getElementById('liveToast')

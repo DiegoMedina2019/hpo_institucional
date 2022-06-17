@@ -23,3 +23,16 @@ Route::get('create',[\App\Http\Controllers\TurnoController::class,'create'])->na
 Route::post('store',[\App\Http\Controllers\TurnoController::class,'store'])->name('turno.store');
 Route::get('get/horarios',[\App\Http\Controllers\HorarioController::class,'index'])->name('horarios');
 Route::get('get/dias',[\App\Http\Controllers\HorarioController::class,'dias'])->name('dias');
+
+Route::get('estudio',[\App\Http\Controllers\EstudioController::class,'index'])->name('estudio');
+Route::get('estudio/get',[\App\Http\Controllers\EstudioController::class,'getEstudios'])->name('estudio.get');
+
+/* RUTAS PARA LA SECCION DE ADMIN */
+Route::get('login-admin', function () {
+    return view('admin.login.login');
+})->name('login');
+
+Route::post('logeo',[\App\Http\Controllers\UserController::class,'login'])->name('login.admin');
+Route::get('logout',[\App\Http\Controllers\UserController::class,'logout'])->name('logout')->middleware(['auth']);
+
+Route::get('home-admin',[\App\Http\Controllers\UserController::class,'index'])->name('admin.home')->middleware(['auth']);
