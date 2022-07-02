@@ -2,36 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Noticia;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
-class UserController extends Controller
+class WebController extends Controller
 {
-    public function login(Request $request)
-    {
-        $credentials = $this->validate(request(),[
-            'username' => 'required|string',
-            'password' => 'required|string'
-        ]);
-            
-        if (Auth::attempt(['username' => $request->username, 'password' => $request->password]))
-        {       
-            $u = auth()->user();
-            return redirect()->route('admin.home');
-           // return view('home.index',compact('u'));
-        }
-        else{
-            return back()
-            ->withErrors(['username'=> trans('auth.failed')])
-            ->withInput(request(['username']));
-        }
-        
-    }
-    public function logout(Request $request)
-    {
-        Auth::logout();
-        return redirect()->route('login');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -39,17 +15,20 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('admin.index');
+        $noticias = Noticia::orderBy('fecha_alta', 'desc')->limit(3)->get();
+        //dd($noticias);
+        return view('home.index',compact('noticias'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function noticiasAll()
     {
-        //
+        DB::statement("SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''))");
+        
+        $noticias = Noticia::join('noticia_docs','noticias_id','noticias.id')
+                            ->orderBy('fecha_alta', 'desc')  
+                            ->groupBy('noticias.id')                         
+                            ->get();
+       // dd($noticias);
+        return view('web.noticias.index',compact('noticias'));
     }
 
     /**

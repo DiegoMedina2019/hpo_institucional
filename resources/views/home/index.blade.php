@@ -555,6 +555,117 @@
         </div>
     </section><!-- End Team Section -->
   
+      <!-- ======= News Section ======= -->
+    <section id="news" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Noticias</h2>
+            <h3><span>Lo ultimo de nuestros profecionales</span></h3>
+          </div>
+          {{-- noticia grande --}}
+          @if (isset($noticias[0]))
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <div class="card mb-3">
+
+                @if ( $noticias[0]->documentos[0]->tipos_doc_id == 2 )
+                  @if ($noticias[0]->documentos[0]->isEnlace == 1)
+                    <iframe style="width: 100%;" height="500" src="{{$noticias[0]->documentos[0]->url_doc}}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  @else
+                    <iframe style="width: 100%;" height="500" src="{{asset($noticias[0]->documentos[0]->url_doc)}}" title="{{$noticias[0]->documentos[0]->nombre_doc}}" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  @endif
+                
+                @endif
+                @if ( $noticias[0]->documentos[0]->tipos_doc_id == 1 )
+                  <img src="{{asset($noticias[0]->documentos[0]->url_doc)}}" class="card-img-top" alt="{{$noticias[0]->documentos[0]->nombre_doc}}" style="height: 500px">
+                @endif
+
+
+                <div class="card-body">
+                  <h5 class="card-title">{{$noticias[0]->titulo}}</h5>
+                  <p class="card-text">{{$noticias[0]->resumen}}</p>
+                  <p class="card-text"><small class="text-muted">Creada el {{date('d-m-Y H:i',strtotime($noticias[0]->fecha_alta))}}</small></p>
+                </div>
+              </div>
+            </div> 
+          @endif
+
+          {{-- noticias pequeñas  --}}
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            @if (isset($noticias[1]))
+              
+              <div class="col-lg-6">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+
+                      @if ( $noticias[1]->documentos[0]->tipos_doc_id == 2 )
+                        @if ($noticias[1]->documentos[0]->isEnlace == 1)
+                          <iframe style="width: 100%;" height="300" src="{{$noticias[1]->documentos[0]->url_doc}}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        @else
+                          <iframe style="width: 100%;" height="300" src="{{asset($noticias[1]->documentos[0]->url_doc)}}" title="{{$noticias[1]->documentos[0]->nombre_doc}}" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        @endif
+                        
+                      @endif
+                      @if ( $noticias[1]->documentos[0]->tipos_doc_id == 1 )
+                        <img src="{{asset($noticias[1]->documentos[0]->url_doc)}}" class="img-fluid rounded-start" alt="{{$noticias[1]->documentos[0]->nombre_doc}}" style="height: 300px;">
+                      @endif
+                      
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title">{{$noticias[1]->titulo}}</h5>
+                        <p class="card-text">{{$noticias[1]->resumen}}</p>
+                        <p class="card-text"><small class="text-muted">Creada el {{date('d-m-Y H:i',strtotime($noticias[1]->fecha_alta))}}</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            @endif
+            @if (isset($noticias[2]))
+            
+              <div class="col-lg-6">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+                      
+                      @if ( $noticias[2]->documentos[0]->tipos_doc_id == 2 )
+                        @if ($noticias[2]->documentos[0]->isEnlace == 1)
+                          <iframe style="width: 100%;" height="300" src="{{$noticias[2]->documentos[0]->url_doc}}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        @else
+                          <iframe style="width: 100%;" height="300" src="{{asset($noticias[2]->documentos[0]->url_doc)}}" title="{{$noticias[2]->documentos[0]->nombre_doc}}" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        @endif
+                        
+                      @endif
+                      @if ( $noticias[2]->documentos[0]->tipos_doc_id == 1 )
+                        <img src="{{asset($noticias[2]->documentos[0]->url_doc)}}" class="img-fluid rounded-start" alt="{{$noticias[2]->documentos[0]->nombre_doc}}" style="height: 300px;">
+                      @endif
+
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title">{{$noticias[2]->titulo}}</h5>
+                        <p class="card-text">{{$noticias[2]->titulo}}</p>
+                        <p class="card-text"><small class="text-muted">Creada el {{date('d-m-Y H:i',strtotime($noticias[2]->fecha_alta))}}</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            @endif
+  
+          </div>
+
+          <div class="section-title">
+            <h2><a href="{{route('noticias_all')}}">Ver Mas</a></h2>
+          </div>
+  
+        </div>
+    </section><!-- End News Section -->
+
       <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">

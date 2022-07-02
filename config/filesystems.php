@@ -37,7 +37,8 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
+            //'root' => storage_path('app/public'),//original
+            'root' => public_path(), //EDITADO PARA QUE LOS ARCHIVOS SE ALMACENEN EN PUBLIC
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],

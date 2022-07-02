@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+
   <!-- =======================================================
   * Template Name: BizLand - v3.7.0
   * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
@@ -62,6 +63,7 @@
 	  </a>
     @yield('content')
 
+    {{-- emergente para rellenar con javascript --}}
     <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
 
       <div class=" toast-container position-fixed p-3 bottom-0 start-50 translate-middle-x" style="z-index: 11">
@@ -79,6 +81,50 @@
       </div>
 
     </div>
+
+     {{-- emergente para rellenar con php laravel --}}
+    @if(session()->has('success'))
+      <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
+
+        <div class=" toast-container position-fixed p-3 bottom-0 start-50 translate-middle-x" style="z-index: 11">
+          <div id="liveToast_2" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-success text-white">
+              <i class='bx bx-error'></i>
+              <strong class="me-auto">¡Aviso!</strong>
+              {{-- <small>11 mins ago</small> --}}
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              {{ session('success') }}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    @endif
+
+    @if(session()->has('warning'))
+
+    @endif
+    @if(session()->has('error'))
+      <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
+
+        <div class=" toast-container position-fixed p-3 bottom-0 start-50 translate-middle-x" style="z-index: 11">
+          <div id="liveToast_2" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-info text-white">
+              <i class='bx bx-error'></i>
+              <strong class="me-auto">¡Aviso!</strong>
+              {{-- <small>11 mins ago</small> --}}
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              {{ session('error') }}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    @endif
 
   </main><!-- End #main -->
 
@@ -158,19 +204,27 @@
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 
+
   <script>
         var toastLiveExample = document.getElementById('liveToast')
 
         var toast = new bootstrap.Toast(toastLiveExample)
+
+        setInterval(() => {
+          let toastLiveExample = document.getElementById('liveToast_2')
+          let toast = new bootstrap.Toast(toastLiveExample)
+          toast.hide()
+        }, 6000);
+
   </script>
 
 @if (session('error'))
     
   <script>
     let mjs = "{{ session('error') }}";
-      $('.toast-body').html('');
+      /* $('.toast-body').html('');
       $('.toast-body').html(mjs);
-      toast.show()
+      toast.show()*/
   </script>
 
 @endif

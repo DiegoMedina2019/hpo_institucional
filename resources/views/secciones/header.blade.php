@@ -3,7 +3,7 @@
     <header id="header" class="d-flex align-items-center">
         <div class="container d-flex align-items-center justify-content-between">
 
-        <h1 class="logo"><a href="index.html">Hospital privado de ojos<span>.</span></a></h1>
+        <h1 class="logo"><a href="{{route('home')}}">Hospital privado de ojos<span>.</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         {{--  <a href="index.html" class="logo"><img src="{{asset('plantilla/assets/img/logo_1.png')}}" alt=""></a> --}}
 
@@ -14,6 +14,7 @@
             <li><a class="nav-link scrollto" href="{{route('estudio')}}">Estudios</a></li>
             <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
             <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+            <li><a class="nav-link scrollto" href="#news">Noticias</a></li>
             {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                 <li><a href="#">Drop Down 1</a></li>
