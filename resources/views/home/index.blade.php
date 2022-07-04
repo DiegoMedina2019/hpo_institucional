@@ -32,7 +32,7 @@
       <h2>Tu clinica de ojos</h2>
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Gestiona tu TURNO</a>
-        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        {{-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> --}}
       </div>
     </div>
   </section>
@@ -44,37 +44,50 @@
         <div class="container" data-aos="fade-up">
   
           <div class="row">
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">Mision</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                <p class="description">Brindar excelencia a la salud visual de los pacientes, solucionando sus
+                  problemas oculares, utilizando la última tecnología y profesionalismo de los
+                  médicos logrando fidelización y satisfacción en nuestros pacientes.</p>
               </div>
             </div>
   
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
               <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="bx bx-world"></i></div>
                 <h4 class="title"><a href="">Vision</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <p class="description">Ser la clínica oftalmológica número uno en el noroeste Argentino, reconocida
+                  por la calidad y excelencia, destacándose ampliamente sobre la competencia.</p>
               </div>
             </div>
   
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+              <div class="icon-box w-100" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon"><i class='bx bxs-analyse'></i></div>
                 <h4 class="title"><a href="">Valores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                <p class="description">
+                  <ul>
+                    <li>Responsabilidad</li>
+                    <li>Compromiso</li>
+                    <li>Confiabilidad</li>
+                    <li>Calidad</li>
+                    <li>Exclusividad</li>
+                    <li>Profesionalismo</li>
+                    <li>Pasión</li>
+                  </ul>
+                </p>
               </div>
             </div>
   
-            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            {{-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
               <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon"><i class="bx bx-tachometer"></i></div>
                 <h4 class="title"><a href="">Objetivos</a></h4>
                 <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
               </div>
-            </div>
+            </div> --}}
   
           </div>
   

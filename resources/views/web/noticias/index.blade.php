@@ -17,7 +17,7 @@
 
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Noticas <span>HPO</span></h1>
+      <h1>Noticias <span>HPO</span></h1>
       <h2>Enterate de lo ultimo</h2>
       <div class="d-flex">
         
