@@ -5,7 +5,7 @@
     line-height: 63px;
     bottom:220px;
     right:25px;
-    background:#1518ed;
+    background:#3b5998;
     color:#FFF;
     border-radius:50px;
     text-align:center;
@@ -26,7 +26,7 @@
     line-height: 63px;
     bottom:155px;
     right:25px;
-    background:#d3254e;
+    background:#C13584;
     color:#FFF;
     border-radius:50px;
     text-align:center;
@@ -36,7 +36,7 @@
     transition: all 300ms ease;
 }
 .btn-intagram:hover{
-    background: #f0773b;
+    background: #a93075;
     color:#FFF;
 }
 

@@ -390,7 +390,7 @@
       
                       <div class="member d-flex">
                         <div class="member-img">
-                          <img src="{{asset('plantilla/assets/img/team/me6.jpg')}}"  class="img-fluid" alt="">
+                          <img src="{{asset('plantilla/assets/img/team/me7.jpg')}}"  class="img-fluid" alt="">
                           <div class="social">
                           </div>
                         </div>
@@ -418,7 +418,7 @@
                   <div class="testimonial-item">
                     <div class="member d-flex">
                       <div class="member-img">
-                        <img src="{{asset('plantilla/assets/img/team/me7.jpg')}}"  class="img-fluid" alt="">
+                        <img src="{{asset('plantilla/assets/img/team/me6.jpg')}}"  class="img-fluid" alt="">
                         <div class="social">
                         </div>
                       </div>
@@ -439,81 +439,12 @@
                     </div>
                   </div>
                 </div><!-- End testimonial item -->
-      
+
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="member d-flex">
                       <div class="member-img">
                         <img src="{{asset('plantilla/assets/img/team/me1.jpeg')}}" class="img-fluid" alt="">
-                        <div class="social">
-                        </div>
-                      </div>
-                      <div class="member-info">
-                        <h4>Dra. Prof. Graciela Graneros</h4>
-                        
-        
-                        <span>
-                          <ul>
-                            <li>Médico oftalmóloga certificada por Academia Nacional de medicina -Consejo argentino de oftalmología. Recertificado por CCREM.</li>
-                            <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán</li>
-                            <li>Docente Facultad de Medicina UNT</li>
-                            <li>Docente Facultad de Medicina USPT.</li>
-                          </ul>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-      
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="member d-flex">
-                      <div class="member-img">
-                        <img src="{{asset('plantilla/assets/img/team/me2.jpeg')}}" class="img-fluid" alt="">
-                        <div class="social">
-                        </div>
-                      </div>
-                      <div class="member-info">
-                        <h4>Dra. Patricia Susana Prieto.</h4>
-                        
-                        <span>
-                          <ul>
-                            <li>Médico Oftalmóloga Certificado por la Academia Nacional de Medicina. Certificada y Recertificada por UNT.</li>
-                            <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán.</li>
-                          </ul>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-      
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="member d-flex">
-                      <div class="member-img">
-                        <img src="{{asset('plantilla/assets/img/team/me3.jpeg')}}" class="img-fluid" alt="">
-                        <div class="social">
-                        </div>
-                      </div>
-                      <div class="member-info">
-                        <h4>Dra. Celia Raquel Valdez</h4>
-                        
-                        <span>
-                          <ul>
-                            <li>Medico oftalmóloga certificada por la Academia Nacional de Medicina y certificada recertificada por la UNT</li>
-                            <li>Presidente de la Caja de médicos e ingenieros de Tucumán.</li>
-                          </ul>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-      
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="member d-flex">
-                      <div class="member-img">
-                        <img src="{{asset('plantilla/assets/img/team/me4.jpeg')}}" class="img-fluid" alt="">
                         <div class="social">
                         </div>
                       </div>
@@ -533,7 +464,54 @@
                     </div>
                   </div>
                 </div><!-- End testimonial item -->
-      
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me3.jpeg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Patricia Susana Prieto.</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Médico Oftalmóloga Certificado por la Academia Nacional de Medicina. Certificada y Recertificada por UNT.</li>
+                            <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán.</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me4.jpeg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Prof. Graciela Graneros</h4>
+                        
+        
+                        <span>
+                          <ul>
+                            <li>Médico oftalmóloga certificada por Academia Nacional de medicina -Consejo argentino de oftalmología. Recertificado por CCREM.</li>
+                            <li>Servicio oftalmología Hospital Centro De Salud Zenón Santillán</li>
+                            <li>Docente Facultad de Medicina UNT</li>
+                            <li>Docente Facultad de Medicina USPT.</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="member d-flex">
@@ -550,6 +528,28 @@
                             <li>Oftalmología Laboral</li>
                             <li>Jubilada como oftalmólogo de la Cátedra de Oftalmología de la U.N.T.</li>
                             <li>Médico oftalmólogo del Hospital Carrillo de Yerba Buena</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <div class="member d-flex">
+                      <div class="member-img">
+                        <img src="{{asset('plantilla/assets/img/team/me2.jpeg')}}" class="img-fluid" alt="">
+                        <div class="social">
+                        </div>
+                      </div>
+                      <div class="member-info">
+                        <h4>Dra. Celia Raquel Valdez</h4>
+                        
+                        <span>
+                          <ul>
+                            <li>Medico oftalmóloga certificada por la Academia Nacional de Medicina y certificada recertificada por la UNT</li>
+                            <li>Presidente de la Caja de médicos e ingenieros de Tucumán.</li>
                           </ul>
                         </span>
                       </div>
