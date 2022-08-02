@@ -58,7 +58,7 @@
     <a href="https://www.instagram.com/oftalmologia.hpo/" class="btn-intagram" target="_blank">
 	    <i class="fab fa-instagram"></i>
 	  </a>
-    <a href=" https://wa.me/03813688983?text=Hola%20vengo%20desde%20la%20web" class="btn-wsp" target="_blank">
+    <a href=" https://wa.me/543813688983?text=Hola%20vengo%20desde%20la%20web" class="btn-wsp" target="_blank">
 	    <i class="fab fa-whatsapp"></i>
 	  </a>
     @yield('content')
@@ -151,7 +151,7 @@
               Batalla de Ayacucho 276 <br>
               T4000 San Miguel de Tucumán<br>
               Tucumán <br><br>
-              <strong>Telefono:</strong> +54 03813688983<br>
+              <strong>Telefono:</strong> +54 543813688983<br>
               {{-- <strong>Email:</strong> info@example.com<br> --}}
             </p>
           </div>
