@@ -108,19 +108,32 @@ class HorarioController extends Controller
 
             $medico_id = $request->medico_id;
             $tipoestudio_id = $request->tipoestudio_id;
+            $clinica_id = $request->clinica_id;
 
             if ($request->isEstudio == "true") {
-                $diasAtencion = Horario::where('tipoestudio_id',$tipoestudio_id )
-                                            ->select('dia')
-                                            ->get();
+                if ($tipoestudio_id != 1) {
+                    $diasAtencion = Horario::where('tipoestudio_id',$tipoestudio_id )
+                                                ->where('clinica_id',$clinica_id )
+                                                ->select('dia')
+                                                ->get();
+                }else {
+                    $diasAtencion = [];
+                }
                 $titulo = "Los dias habiles para este estudio son los siguientes:";
             } else {
-                $diasAtencion = Horario::where('medico_id',$medico_id )
+                if ($medico_id != 1) {
+                    $diasAtencion = Horario::where('medico_id',$medico_id )
+                                            ->where('clinica_id',$clinica_id )
                                             ->select('dia')
                                             ->get();
+                }else {
+                    $diasAtencion = [];
+                }
+                
                 $titulo = "Los dias laborales del medico seleccionado son los siguientes:";
             }
             $arr = array();
+            
             foreach ($diasAtencion as  $value) {
                 array_push($arr,$value);
             }

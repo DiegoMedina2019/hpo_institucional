@@ -411,16 +411,32 @@
       let params = {
         medico_id : $('#medico_id').val(),
         tipoestudio_id : $('#tipoestudio_id').val(),
+        clinica_id : $('#clinica_id').val(),        
         isEstudio : $('#isEstudio').is(':checked'),
         _token : $('input[name=_token]').val(),
       }
       //console.log(params)
       if ($('#isEstudio').is(':checked') && $('#tipoestudio_id').val() != null) {
         console.log("es estudio");
-        newTurno(params);
+        //Necesito que hayan seleccionado la clinica antes de preguntar  los horarios
+        if ($('#clinica_id').val() != null) {
+          newTurno(params);
+        } else {          
+          $('.toast-body').html('');
+          $('.toast-body').html("¡Por favor, selecciona una clinica antes!");
+          toast.show()
+        }
+        
       }else if ( !$('#isEstudio').is(':checked') && $('#medico_id').val() != null) {
         console.log("es medico");
-        newTurno(params);
+        if ($('#clinica_id').val() != null) {
+            newTurno(params);
+        } else {          
+          $('.toast-body').html('');
+          $('.toast-body').html("¡Por favor, selecciona una clinica antes!");
+          toast.show()
+        }
+        
       }
   
     })
